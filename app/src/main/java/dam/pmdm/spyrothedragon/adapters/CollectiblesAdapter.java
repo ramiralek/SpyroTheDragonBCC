@@ -1,10 +1,13 @@
 package dam.pmdm.spyrothedragon.adapters;
 
+import android.net.Uri;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,9 +19,12 @@ import dam.pmdm.spyrothedragon.models.Collectible;
 public class CollectiblesAdapter extends RecyclerView.Adapter<CollectiblesAdapter.CollectiblesViewHolder> {
 
     private List<Collectible> list;
+    private int timesClicked = 0;
+    private VideoView videoView;
 
-    public CollectiblesAdapter(List<Collectible> collectibleList) {
+    public CollectiblesAdapter(List<Collectible> collectibleList, VideoView videoView) {
         this.list = collectibleList;
+        this.videoView = videoView;
     }
 
     @Override
@@ -35,6 +41,17 @@ public class CollectiblesAdapter extends RecyclerView.Adapter<CollectiblesAdapte
         // Cargar la imagen (simulado con un recurso drawable)
         int imageResId = holder.itemView.getContext().getResources().getIdentifier(collectible.getImage(), "drawable", holder.itemView.getContext().getPackageName());
         holder.imageImageView.setImageResource(imageResId);
+
+        holder.itemView.setOnClickListener(v -> {
+            if (position == 1) {
+                timesClicked++;
+                if (timesClicked == 4) {
+                    videoView.setVideoPath("android.resource://" + holder.itemView.getContext().getPackageName() + "/" + R.raw.video);
+                    videoView.start();
+                    videoView.setVisibility(View.VISIBLE);
+                }
+            }
+        });
     }
 
     @Override

@@ -4,6 +4,23 @@
     <string name="characters">Personajes</string>
     <string name="collectibles">Coleccionables</string>
     <string name="title_about">Acerca de</string>
-    <string name="text_about">Aplicación desarrollada por \n <b>Lindsay Barrero Martínez.</b></string>
+    <string name="text_about">Aplicación desarrollada por \n <b>Beatriz Conde Cerón.</b></string>
     <string name="accept">Aceptar</string>
+    <string name="welcome">¡Bienvenido!</string>
+    <string name="guide_text">Estás a punto de entrar al mágico mundo de:</string>
+    <string name="guide_second_text">Aquí aprenderás a navegar por pestañas llenas de dragones, mundos fascinantes y montones de tesoros brillantes.</string>
+    <string name="guide_third_text">¿Estás listo para comenzar?</string>
+    <string name="guide_fourth_text">Pulsa \"Comenzar\" y deja que Spyro te lleve volando a través de esta guía interactiva.</string>
+    <string name="start">Comenzar</string>
+    <string name="exit_guide">Saltar guía</string>
+    <string name="next_step">Siguiente</string>
+    <string name="end_guide">Terminar</string>
+    <string name="first_section">En esta sección encontrarás un listado con los personajes del universo de Spyro. ¡Pulsa sobre Spyro para descubrir su secreto!</string>
+    <string name="second_section">En esta sección encontrarás un listado con los mundos del universo de Spyro. ¿Habrá algún secreto escondido en esta sección también?</string>
+    <string name="third_section">En esta sección encontrarás un listado con los coleccionables del universo de Spyro. Es posible que uno de los coleccionables también oculte un secreto.</string>
+    <string name="fourth_section">Aquí encontrarás información sobre la aplicación y la persona que la ha desarrollado.</string>
+    <string name="congrats">¡Enhorabuena!</string>
+    <string name="guide_end_text">Ya estás preparado para disfrutar del fantástico mundo de:</string>
+    <string name="summary">Ahora que has aprendido a utilizar las secciones de personajes, mundos y coleccionables del universo de Spyro, así como la información del desarrollador, estás listo para utilizar libremente la aplicación.</string>
+    <string name="press_button">Pulsa el botón \"Comenzar\" para entrar en la aplicación:</string>
 </resources>

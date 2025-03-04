@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/guideIntroLayout"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textAllCaps="true"
+        android:textSize="44sp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:id="@+id/guide_welcome"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/spyro_title"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_second_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_third_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guide_fourth_text"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="25dp"/>
+
+    <android.widget.Button
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/start"
+        android:textSize="18sp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button"
+        android:id="@+id/startButton"/>
+
+</LinearLayout>
